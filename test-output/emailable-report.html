@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">7</td><td class="num">22.381</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td><td><a href="#m0">EliminarTipoPlanilla</a></td><td rowspan="1">1584542714686</td><td rowspan="1">7</td></tr><tr class="failedeven"><td><a href="#m1">ListarTipoPlanillaPorEmpresa</a></td><td rowspan="1">1584542714565</td><td rowspan="1">10</td></tr><tr class="failedeven"><td><a href="#m2">eliminarTPD</a></td><td rowspan="1">1584542713846</td><td rowspan="1">122</td></tr><tr class="failedeven"><td><a href="#m3">testAsignarTrabajador</a></td><td rowspan="1">1584542714584</td><td rowspan="1">59</td></tr><tr class="failedeven"><td><a href="#m4">testListarPorTipoPlanilla</a></td><td rowspan="1">1584542714395</td><td rowspan="1">48</td></tr><tr class="failedeven"><td><a href="#m5">testModifcar</a></td><td rowspan="1">1584542714678</td><td rowspan="1">5</td></tr><tr class="failedeven"><td><a href="#m6">testRegistrarTipoPlanilla</a></td><td rowspan="1">1584542714452</td><td rowspan="1">109</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td><td><a href="#m7">listarTrabajodesLibres</a></td><td rowspan="1">1584542713986</td><td rowspan="1">407</td></tr><tr class="passedeven"><td><a href="#m8">testListarPorPerfil</a></td><td rowspan="1">1584542714646</td><td rowspan="1">29</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">com.mitocode.controller.TestNG.TipoPlanillaControllerTest#EliminarTipoPlanilla</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.eliminar(TipoPlanillaController.java:229)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.eliminar(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.EliminarTipoPlanilla(TipoPlanillaControllerTest.java:80)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.mitocode.controller.TestNG.TipoPlanillaControllerTest#ListarTipoPlanillaPorEmpresa</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [2] but found [3]
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.ListarTipoPlanillaPorEmpresa(TipoPlanillaControllerTest.java:75)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.mitocode.controller.TestNG.TipoPlanillaControllerTest#eliminarTPD</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.eliminarTPD(TipoPlanillaController.java:204)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.eliminarTPD(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.eliminarTPD(TipoPlanillaControllerTest.java:51)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.mitocode.controller.TestNG.TipoPlanillaControllerTest#testAsignarTrabajador</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.registrarTrabajadores(TipoPlanillaController.java:254)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.registrarTrabajadores(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testAsignarTrabajador(TipoPlanillaControllerTest.java:108)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.mitocode.controller.TestNG.TipoPlanillaControllerTest#testListarPorTipoPlanilla</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testListarPorTipoPlanilla(TipoPlanillaControllerTest.java:129)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.mitocode.controller.TestNG.TipoPlanillaControllerTest#testModifcar</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.mitocode.controller.TipoPlanillaController.modificar(TipoPlanillaController.java:139)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.modificar(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testModifcar(TipoPlanillaControllerTest.java:99)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.mitocode.controller.TestNG.TipoPlanillaControllerTest#testRegistrarTipoPlanilla</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.registrar(TipoPlanillaController.java:85)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.registrar(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testRegistrarTipoPlanilla(TipoPlanillaControllerTest.java:88)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.mitocode.controller.TestNG.TipoPlanillaControllerTest#listarTrabajodesLibres</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.mitocode.controller.TestNG.TipoPlanillaControllerTest#testListarPorPerfil</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

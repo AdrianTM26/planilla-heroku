@@ -1,0 +1,5 @@
+1000003202003184C00011213212312132       00000000002800.00Pago ENERO 2020                         1265188096262091
+
+2A1212121212121       115151515151    Adrian Torres Morales                                                      Referencia Beneficiario 15151515151     Ref Emp 15151515151 0001000000000800.0.00N
+2A151651651615616     154551515151    Eduardo Arce Ramos                                                         Referencia Beneficiario 54551515151     Ref Emp 54551515151 0001000000001600.0.00N
+2A1111111111122222    123123123123    Alessandro nose nose                                                       Referencia Beneficiario 23123123123     Ref Emp 23123123123 0001000000000400.0.00N

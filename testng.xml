@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="ControllerTest">
+    <classes>
+      <class name="com.mitocode.controller.TestNG.TestEmpresaController"/>
+      <class name="com.mitocode.controller.TestNG.TestCategoriaController"/>
+      <class name="com.mitocode.controller.TestNG.TestCargoController"/>
+      <class name="com.mitocode.controller.TestNG.TestSituacionController"/>
+      <class name="com.mitocode.controller.TestNG.TestEpsController"/>
+      <class name="com.mitocode.controller.TestNG.TestTipoDocController"/>
+      <class name="com.mitocode.controller.TestNG.EmpresaServiceImplTestMOCKITO"/>
+      <class name="com.mitocode.controller.TestNG.TestRegSaludController"/>
+      <class name="com.mitocode.controller.TestNG.TestDistritoController"/>
+      <class name="com.mitocode.controller.TestNG.TestPaisController"/>
+      <class name="com.mitocode.controller.TestNG.TestTipoContratoController"/>
+      <class name="com.mitocode.controller.TestNG.TestPlanillaController"/>
+      <class name="com.mitocode.controller.TestNG.TestAfpController"/>
+      <class name="com.mitocode.controller.TestNG.TestRegimenLaboralController"/>
+      <class name="com.mitocode.controller.TestNG.TestCentroCostoController"/>
+      <class name="com.mitocode.controller.TestNG.TestTrabajadorController"/>
+      <class name="com.mitocode.controller.TestNG.TestNivelEduController"/>
+      <class name="com.mitocode.controller.TestNG.TestSctrController"/>
+      <class name="com.mitocode.controller.TestNG.TestOcupacionController"/>
+      <class name="com.mitocode.controller.TestNG.TestBancoController"/>
+      <class name="com.mitocode.controller.TestNG.TestParametroController"/>
+      <class name="com.mitocode.controller.TestNG.TestTipoPagoController"/>
+      <class name="com.mitocode.controller.TestNG.TestTipoZonaController"/>
+      <class name="com.mitocode.controller.TestNG.TestDepartamentoController"/>
+      <class name="com.mitocode.controller.TestNG.TestProvinciaController"/>
+    </classes>
+  </test> <!-- ControllerTest -->
+</suite> <!-- Suite -->

@@ -1,0 +1,4 @@
+1000002202003124C000123123123123123       00000000002400.00Pago ENERO 2015                         047370703099370
+
+2A123456852123        110726986120    Adrian Torres Morales                                                      Referencia Beneficiario 10726986120     Ref Emp 10726986120 0001000000000900.0.00N
+2A24124123124124      111622848484    Eduardo Arce Flores                                                        Referencia Beneficiario 11622848484     Ref Emp 11622848484 0001000000001500.0.00N

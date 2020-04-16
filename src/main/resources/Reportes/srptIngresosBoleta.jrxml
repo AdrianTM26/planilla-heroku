@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="srptIngresosBoleta" pageWidth="250" pageHeight="802" columnWidth="250" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="8652b86e-d099-4cfc-b253-abc31dc81350">
+	<property name="ireport.zoom" value="1.331000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="id_planilla_ingr" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+case when rem_jor_norm=0.0 or rem_jor_norm is null
+then null else ROUND(CAST(rem_jor_norm AS NUMERIC),2) end AS rem_jor_norm,
+case when rem_jor_norm=0.0 or rem_jor_norm is null
+then null else 'SUELDO MENSUAL' end as msj_remJorNorm,
+
+case when asig_fam=0.0 or asig_fam is null
+then null else ROUND(CAST(asig_fam AS NUMERIC),2) end AS asig_fam,
+case when asig_fam=0.0 or asig_fam is null
+then null else 'ASIGNACION FAMILIAR' end as msj_asigFam,
+
+case when rem_cts=0.0 or rem_cts is null
+then null else ROUND(CAST(rem_cts AS NUMERIC),2) end AS rem_cts,
+case when rem_cts=0.0 or rem_cts is null
+then null else 'CTS' end as msj_cts,
+
+case when movilidad=0.0 or movilidad is null
+then null else ROUND(CAST(movilidad AS NUMERIC),2) end AS movilidad,
+case when movilidad=0.0 or movilidad is null
+then null else 'MOVILIDAD' end as msj_mov,
+
+case when rem_dia_ferdo_labo=0.0 or rem_dia_ferdo_labo is null
+then null else ROUND(CAST(rem_dia_ferdo_labo AS NUMERIC),2) end AS rem_dia_ferdo_labo,
+case when rem_dia_ferdo_labo=0.0 or rem_dia_ferdo_labo is null
+then null else 'FERIADO LABORADO' end as msj_ferdoLabo,
+
+case when rem_grati=0.0 or rem_grati is null
+then null else ROUND(CAST(rem_grati AS NUMERIC),2) end AS rem_grati,
+case when rem_grati=0.0 or rem_grati is null
+then null else 'GRATIFICACION' end as msj_grati,
+
+case when rem_ho_ext25=0.0 or rem_ho_ext25 is null
+then null else ROUND(CAST(rem_ho_ext25 AS NUMERIC),2) end AS rem_ho_ext25,
+case when rem_ho_ext25=0.0 or rem_ho_ext25 is null
+then null else 'HORAS EXTRA 25%' end as msj_hoExt25,
+
+case when rem_ho_ext35=0.0 or rem_ho_ext35 is null
+then null else ROUND(CAST(rem_ho_ext35 AS NUMERIC),2) end AS rem_ho_ext35,
+case when rem_ho_ext35=0.0 or rem_ho_ext35 is null
+then null else 'HORAS EXTRA 35%' end as msj_hoExt35,
+
+case when rem_vaca_vend=0.0 or rem_vaca_vend is null
+then null else ROUND(CAST(rem_vaca_vend AS NUMERIC),2) end AS rem_vaca_vend,
+case when rem_vaca_vend=0.0 or rem_vaca_vend is null
+then null else 'VENTA VACACIONES' end as msj_vtaVaca,
+
+case when bonif29351=0.0 or bonif29351 is null
+then null else ROUND(CAST(bonif29351 AS NUMERIC),2) end AS bonif29351,
+case when bonif29351=0.0 or bonif29351 is null
+then null else 'Bonificacion 29351' end as msj_boni
+
+FROM planilla_historico
+WHERE id_planilla_historico=$P{id_planilla_ingr}]]>
+	</queryString>
+	<field name="rem_jor_norm" class="java.math.BigDecimal"/>
+	<field name="msj_remjornorm" class="java.lang.String"/>
+	<field name="asig_fam" class="java.math.BigDecimal"/>
+	<field name="msj_asigfam" class="java.lang.String"/>
+	<field name="rem_cts" class="java.math.BigDecimal"/>
+	<field name="msj_cts" class="java.lang.String"/>
+	<field name="movilidad" class="java.math.BigDecimal"/>
+	<field name="msj_mov" class="java.lang.String"/>
+	<field name="rem_dia_ferdo_labo" class="java.math.BigDecimal"/>
+	<field name="msj_ferdolabo" class="java.lang.String"/>
+	<field name="rem_grati" class="java.math.BigDecimal"/>
+	<field name="msj_grati" class="java.lang.String"/>
+	<field name="rem_ho_ext25" class="java.math.BigDecimal"/>
+	<field name="msj_hoext25" class="java.lang.String"/>
+	<field name="rem_ho_ext35" class="java.math.BigDecimal"/>
+	<field name="msj_hoext35" class="java.lang.String"/>
+	<field name="rem_vaca_vend" class="java.math.BigDecimal"/>
+	<field name="msj_vtavaca" class="java.lang.String"/>
+	<field name="bonif29351" class="java.math.BigDecimal"/>
+	<field name="msj_boni" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="200">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="190" height="20" isRemoveLineWhenBlank="true" uuid="cd83c2b9-68b4-40f6-86b3-534f04f78a49"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{msj_remjornorm}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="0" width="60" height="20" isRemoveLineWhenBlank="true" uuid="59cf6d9b-6988-4d13-a603-8e304180965f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rem_jor_norm}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="20" width="190" height="20" isRemoveLineWhenBlank="true" uuid="204e3494-24f2-436c-bc83-1e80fff66ee1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{msj_asigfam}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="20" width="60" height="20" isRemoveLineWhenBlank="true" uuid="805ab24f-0e94-4b20-90e5-d2a50756a2c8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{asig_fam}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="40" width="190" height="20" isRemoveLineWhenBlank="true" uuid="7c036964-1092-40ab-991c-92d53ca3e350"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{msj_cts}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="40" width="60" height="20" isRemoveLineWhenBlank="true" uuid="6dfe2cd2-9a15-4eb3-ac3f-2a4b462c1a4a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rem_cts}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="60" width="60" height="20" isRemoveLineWhenBlank="true" uuid="8cc4aa0b-bf57-413f-b764-8852cec747d4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rem_dia_ferdo_labo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="60" width="190" height="20" isRemoveLineWhenBlank="true" uuid="319a13f1-75a5-4a0b-b977-3fcf93493f34"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{msj_ferdolabo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="160" width="190" height="20" isRemoveLineWhenBlank="true" uuid="0721ac9a-c0f3-48de-9677-f9a646e91e43"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{msj_mov}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="160" width="60" height="20" isRemoveLineWhenBlank="true" uuid="907913ae-c45b-4c4f-a890-2bb0245da90e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{movilidad}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="80" width="190" height="20" isRemoveLineWhenBlank="true" uuid="a0190f47-c892-4919-a52e-6ff91c0e61f6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{msj_grati}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="80" width="60" height="20" isRemoveLineWhenBlank="true" uuid="c63a1fed-6dad-4ed4-9425-02f5941167c6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rem_grati}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="100" width="60" height="20" isRemoveLineWhenBlank="true" uuid="621ed978-6d6c-4153-9a3c-465eb544f04e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rem_ho_ext25}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="100" width="190" height="20" isRemoveLineWhenBlank="true" uuid="023d590a-8d0d-455a-af9e-5d95466191f4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{msj_hoext25}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="120" width="60" height="20" isRemoveLineWhenBlank="true" uuid="5afdbe1c-4cfe-4682-956f-bb4d54088827"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rem_ho_ext35}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="120" width="190" height="20" isRemoveLineWhenBlank="true" uuid="58a83150-07cd-4437-8497-ede92f3b7dcf"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{msj_hoext35}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="140" width="60" height="20" isRemoveLineWhenBlank="true" uuid="262733e8-0910-464d-9420-9156f215ea4f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rem_vaca_vend}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="140" width="190" height="20" isRemoveLineWhenBlank="true" uuid="5d0ba283-91ac-45d7-94ce-dee53662af5c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{msj_vtavaca}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="180" width="60" height="20" isRemoveLineWhenBlank="true" uuid="2b463f46-af42-40fe-9d6f-e97d489732f7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bonif29351}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="180" width="190" height="20" isRemoveLineWhenBlank="true" uuid="a35fdf5d-4b18-4d3b-8adc-d8b02b98a8b1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{msj_boni}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

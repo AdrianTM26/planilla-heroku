@@ -1,0 +1,261 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 18 09:44:52 COT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22381 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mitocode.controller.TestNG.TipoPlanillaControllerTest.EliminarTipoPlanilla()'><b>EliminarTipoPlanilla</b><br>Test class: com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td>
+<td><div><pre>com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.eliminar(TipoPlanillaController.java:229)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.eliminar(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.EliminarTipoPlanilla(TipoPlanillaControllerTest.java:80)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1515157777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515157777'><pre>com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.eliminar(TipoPlanillaController.java:229)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.eliminar(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.EliminarTipoPlanilla(TipoPlanillaControllerTest.java:80)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div></td>
+<td>0</td>
+<td>com.mitocode.controller.TestNG.TipoPlanillaControllerTest@68f4865</td></tr>
+<tr>
+<td title='com.mitocode.controller.TestNG.TipoPlanillaControllerTest.ListarTipoPlanillaPorEmpresa()'><b>ListarTipoPlanillaPorEmpresa</b><br>Test class: com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td>
+<td><div><pre>java.lang.AssertionError: expected [2] but found [3]
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.ListarTipoPlanillaPorEmpresa(TipoPlanillaControllerTest.java:75)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1569007457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1569007457'><pre>java.lang.AssertionError: expected [2] but found [3]
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.ListarTipoPlanillaPorEmpresa(TipoPlanillaControllerTest.java:75)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div></td>
+<td>0</td>
+<td>com.mitocode.controller.TestNG.TipoPlanillaControllerTest@68f4865</td></tr>
+<tr>
+<td title='com.mitocode.controller.TestNG.TipoPlanillaControllerTest.eliminarTPD()'><b>eliminarTPD</b><br>Test class: com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td>
+<td><div><pre>com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.eliminarTPD(TipoPlanillaController.java:204)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.eliminarTPD(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.eliminarTPD(TipoPlanillaControllerTest.java:51)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1985352137", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1985352137'><pre>com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.eliminarTPD(TipoPlanillaController.java:204)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.eliminarTPD(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.eliminarTPD(TipoPlanillaControllerTest.java:51)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div></td>
+<td>0</td>
+<td>com.mitocode.controller.TestNG.TipoPlanillaControllerTest@68f4865</td></tr>
+<tr>
+<td title='com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testAsignarTrabajador()'><b>testAsignarTrabajador</b><br>Test class: com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td>
+<td><div><pre>com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.registrarTrabajadores(TipoPlanillaController.java:254)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.registrarTrabajadores(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testAsignarTrabajador(TipoPlanillaControllerTest.java:108)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1351817489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1351817489'><pre>com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.registrarTrabajadores(TipoPlanillaController.java:254)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.registrarTrabajadores(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testAsignarTrabajador(TipoPlanillaControllerTest.java:108)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div></td>
+<td>0</td>
+<td>com.mitocode.controller.TestNG.TipoPlanillaControllerTest@68f4865</td></tr>
+<tr>
+<td title='com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testListarPorTipoPlanilla()'><b>testListarPorTipoPlanilla</b><br>Test class: com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testListarPorTipoPlanilla(TipoPlanillaControllerTest.java:129)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div><a href='#' onClick='toggleBox("stack-trace545374823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace545374823'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testListarPorTipoPlanilla(TipoPlanillaControllerTest.java:129)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div></td>
+<td>0</td>
+<td>com.mitocode.controller.TestNG.TipoPlanillaControllerTest@68f4865</td></tr>
+<tr>
+<td title='com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testModifcar()'><b>testModifcar</b><br>Test class: com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.mitocode.controller.TipoPlanillaController.modificar(TipoPlanillaController.java:139)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.modificar(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testModifcar(TipoPlanillaControllerTest.java:99)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2097865681", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2097865681'><pre>java.lang.NullPointerException
+	at com.mitocode.controller.TipoPlanillaController.modificar(TipoPlanillaController.java:139)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.modificar(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testModifcar(TipoPlanillaControllerTest.java:99)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div></td>
+<td>0</td>
+<td>com.mitocode.controller.TestNG.TipoPlanillaControllerTest@68f4865</td></tr>
+<tr>
+<td title='com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testRegistrarTipoPlanilla()'><b>testRegistrarTipoPlanilla</b><br>Test class: com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td>
+<td><div><pre>com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.registrar(TipoPlanillaController.java:85)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.registrar(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testRegistrarTipoPlanilla(TipoPlanillaControllerTest.java:88)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div><a href='#' onClick='toggleBox("stack-trace476931575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace476931575'><pre>com.mitocode.exception.ExceptionResponse
+	at com.mitocode.controller.TipoPlanillaController.registrar(TipoPlanillaController.java:85)
+	at com.mitocode.controller.TipoPlanillaController$$FastClassBySpringCGLIB$$ece2d6a6.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.mitocode.controller.TipoPlanillaController$$EnhancerBySpringCGLIB$$5ea1963f.registrar(&lt;generated&gt;)
+	at com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testRegistrarTipoPlanilla(TipoPlanillaControllerTest.java:88)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
+</pre></div></td>
+<td>0</td>
+<td>com.mitocode.controller.TestNG.TipoPlanillaControllerTest@68f4865</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mitocode.controller.TestNG.TipoPlanillaControllerTest.listarTrabajodesLibres()'><b>listarTrabajodesLibres</b><br>Test class: com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.mitocode.controller.TestNG.TipoPlanillaControllerTest@68f4865</td></tr>
+<tr>
+<td title='com.mitocode.controller.TestNG.TipoPlanillaControllerTest.testListarPorPerfil()'><b>testListarPorPerfil</b><br>Test class: com.mitocode.controller.TestNG.TipoPlanillaControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.mitocode.controller.TestNG.TipoPlanillaControllerTest@68f4865</td></tr>
+</table><p>
+</body>
+</html>
