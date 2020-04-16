@@ -14,7 +14,7 @@
         <connectionSource
             class="ch.qos.logback.core.db.DriverManagerConnectionSource">
             <driverClass>org.postgresql.Driver</driverClass>
-            <url>jdbc:postgresql://localhost:5432/POSPLAND</url>
+            <url>jdbc:postgresql://ec2-54-157-78-113.compute-1.amazonaws.com:5432/d7nndnudoldtdg</url>
             <user>postgres</user>
             <password>admin</password> <!-- no password -->
         </connectionSource>
